@@ -26,6 +26,7 @@ __initADOMD()
 from pyadomd import Pyadomd
 
 
+
 def getReportInfo() -> tuple[str, str]:
     """
     Return a tuple containing (reportId, reportPort)
@@ -84,6 +85,3 @@ def getTableFromReport(tableName:str) -> pd.DataFrame:
             print(cur.description)
 
     return df
-
-__initADOMD()
-print(getTableFromReport("LanesIcons"))

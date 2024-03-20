@@ -8,7 +8,6 @@ def __initADOMD():
         adomdPath = f"\\Program Files\\Microsoft.NET\\ADOMD.NET\\{next(os.walk("C:\\Program Files\\Microsoft.NET\\ADOMD.NET"))[1][0]}"
         
         path.append(adomdPath)
-        from pyadomd import Pyadomd
 
         logging.info("ADOMD library found and imported.")
     except:
@@ -82,6 +81,4 @@ def getTableFromReport(tableName:str) -> pd.DataFrame:
             df = pd.DataFrame(cur.fetchone(), 
                               columns=[i.name.replace(f"{tableName}[", "").replace("]", "") for i in cur.description])
             
-            print(cur.description)
-
     return df

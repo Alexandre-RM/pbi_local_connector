@@ -1,4 +1,5 @@
 dist/
 build/
+__pycache__/
 pbi_local_connector.egg-info
-.twine-api-key
+.pypirc

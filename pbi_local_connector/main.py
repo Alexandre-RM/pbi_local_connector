@@ -16,6 +16,7 @@ def __initADOMD():
                     https://learn.microsoft.com/en-us/analysis-services/client-libraries?view=asallproducts-allversions")
     
 
+
 # need manual installation of ADOMD available at 
 # https://learn.microsoft.com/en-us/analysis-services/client-libraries?view=asallproducts-allversions
 # or direct install at
@@ -28,7 +29,7 @@ from pyadomd import Pyadomd
 
 def getReportInfo() -> tuple[str, str]:
     """
-    Return a tuple containing (reportId, reportPort)
+    Return a tuple containing: (reportId, reportPort)
     """
 
     path1 = os.environ['LocalAppData'] + r"\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces"

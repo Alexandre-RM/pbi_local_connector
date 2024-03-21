@@ -6,6 +6,7 @@ It aims to connect simply to any locally opened PowerBI dashboard, and export da
 
 Data is provided as a pandas DataFrame.
 
+
 **Usage examples:**
 
 Get data from a table in the PowerBI report:
@@ -23,6 +24,8 @@ import pbi_local_connector as pbi
 
 reportId, reportPort = pbi.getReportInfo()
 ```
+
+
 
 **Known limits:**
 

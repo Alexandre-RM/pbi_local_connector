@@ -1,8 +1,10 @@
 from setuptools import setup, find_packages
+from deploy_script import getVersion
+
 
 setup(
     name="pbi_local_connector",
-    version="0.4",
+    version=getVersion(True),
     packages=find_packages(),
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',

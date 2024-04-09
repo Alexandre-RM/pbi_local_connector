@@ -25,7 +25,12 @@ import pbi_local_connector as pbi
 reportId, reportPort = pbi.getReportInfo()
 ```
 
+**Installation**
 
+Simply run the following, and you're ready to go:
+```
+pip install pbi_local_connector
+```
 
 **Known limits:**
 

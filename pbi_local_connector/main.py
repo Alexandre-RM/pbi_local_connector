@@ -5,7 +5,7 @@ import pandas as pd
 
 def __initADOMD():
     try:
-        adomdPath = f"\\Program Files\\Microsoft.NET\\ADOMD.NET\\{next(os.walk("C:\\Program Files\\Microsoft.NET\\ADOMD.NET"))[1][0]}"
+        adomdPath = rf"C:\Program Files\Microsoft.NET\ADOMD.NET\{next(os.walk(r"C:\Program Files\Microsoft.NET\ADOMD.NET"))[1][0]}"
         
         path.append(adomdPath)
 
